@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Race00 Calculator</title>
+    <meta name="description" content="vnhuyen`s team race00">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>vnhuyen`s team race00</h1>
+    <div id="mainDiv">
+        <div id="computeDiv">
+            <span id="historySpan"></span>
+            <textarea id="inputTextarea" oninput="textChanged()" onclick="textFocus()" placeholder="0"></textarea>
+        </div>
+        <div id="buttonsDiv">
+            <table>
+                <tbody>
+                    <tr>
+                        <td onclick="functionAdd()">+</td>
+                        <td onclick="buttonSeven()">7</td>
+                        <td onclick="buttonEight()">8</td>
+                        <td onclick="buttonNine()">9</td>
+                        <td onclick="functionPow()">^</td>
+                    </tr>
+                    <tr>
+                        <td onclick="functionSubstract()">-</td>
+                        <td onclick="buttonFour()">4</td>
+                        <td onclick="buttonFive()">5</td>
+                        <td onclick="buttonSix()">6</td>
+                        <td onclick="functionRoot()">&radic;</td>
+                    </tr>
+                    <tr>
+                        <td onclick="functionDivide()">/</td>
+                        <td onclick="buttonOne()">1</td>
+                        <td onclick="buttonTwo()">2</td>
+                        <td onclick="buttonThree()">3</td>
+                        <td onclick="functionFactorial()">!</td>
+                    </tr>
+                    <tr>
+                        <td onclick="functionMultiply()">*</td>
+                        <td onclick="buttonDot()">.</td>
+                        <td onclick="buttonZero()">0</td>
+                        <td onclick="functionResult()" colspan="2">=</td>
+                    </tr>
+                    <tr>
+                        <td onclick="functionDivideModule()">%</td>
+                        <td onclick="functionPlusMinus()">+/-</td>
+                        <td onclick="functionClear()">C</td>
+                        <td onclick="functionBackspace()" colspan="2">&lt;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
